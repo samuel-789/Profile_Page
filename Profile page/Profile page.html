@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - G Raj Samuel Paul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9ecef;
+            color: #343a40;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Main container styling */
+        .resume-container {
+            width: 80%;
+            max-width: 900px;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Profile Picture */
+        .profile-picture {
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #007bff;
+            background-size: cover;
+            background-position: center;
+            animation: fadeInRight 1s ease forwards;
+        }
+
+        /* Fade In Right Animation */
+        @keyframes fadeInRight {
+            from { transform: translateX(100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Navbar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1rem;
+            position: relative;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cfd8dc;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: white;
+            transition: width 0.3s, left 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #007bff;
+            position: relative;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* Fade in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section h2 {
+            font-size: 1.7rem;
+            color: #007bff;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            bottom: -5px;
+            left: 0;
+            transition: transform 0.3s;
+            transform: scaleX(0);
+        }
+
+        .section:hover h2::after {
+            transform: scaleX(1);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .map {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Resume Container -->
+    <div class="resume-container">
+        
+        <!-- Profile Picture -->
+        <div class="profile-picture" style="background-image: url('paul.jpeg');"></div>
+
+        <!-- Header with Name and Intro -->
+        <header>
+            <h1>G Raj Samuel Paul</h1>
+            <p>Bhimavaram, Andhra Pradesh | Phone: 7670832728</p>
+            <p><a href="mailto:rajagonamanda.777@gmail.com">rajagonamanda.777@gmail.com</a></p>
+        </header>
+
+        <!-- Navbar -->
+        <nav>
+            <a href="#objective">Objective</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#internship">Internship</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Career Objective Section -->
+        <div id="objective" class="section">
+            <h2>Career Objective</h2>
+            <p>I am seeking an entry-level position to start my career. I am willing to explore a wide range of opportunities that can help me gain perspective. I want to work in a dynamic organization that would help in my personal and professional growth.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology in Electronics Communication and Engineering</strong></p>
+            <p>Anil Neerukonda Institute of Technology and Sciences, Visakhapatnam, India | 2020 – 2024 | CGPA: 8.14</p>
+            <p><strong>Intermediate (MPC)</strong></p>
+            <p>Narayana Junior College, Vijayawada, India | 2018 – 2020 | CGPA: 8.94</p>
+            <p><strong>10th Standard</strong></p>
+            <p>Divine Mercy EM High School, Veeravasaram, India | 2017 – 2018 | CGPA: 9.3</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Problem-solving with C</li>
+                <li>MATLAB</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </div>
+
+        <!-- Internship Section -->
+        <div id="internship" class="section">
+            <h2>Internship</h2>
+            <p><strong>All India Radio (AIR)</strong></p>
+            <p>Completed my industrial training internship on learning to use Arduino IoT Cloud for IoT projects | May – June 2023, Visakhapatnam, India</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p><strong>Enhancing Wearable Antenna for Biomedical and IoT Applications</strong> (2023 – 2024)</p>
+            <p>Simulated the finalized antenna with varying distances from the human body, assessing its effects on the human body.</p>
+            <p><strong>Mini Project: Arduino All-in-One Robot Car</strong> (2022)</p>
+            <p>Implemented features including obstacle avoidance, IR remote control, and line-following capabilities.</p>
+            <p><strong>Mini Project: Water Level Indicator and Intimator Using Wi-Fi Calling (ESP8266 Arduino)</strong> (2022)</p>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div id="contact" class="section contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> Bhimavaram, Andhra Pradesh, India</p>
+            <p><strong>Email:</strong> <a href="mailto:rajagonamanda.777@gmail.com">rajagonamanda.777@gmail.com</a></p>
+            <iframe class="map" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391763.0297403323!2d80.87278824568233!3d16.53107737767588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54a32449aab06f%3A0x19d63dbd01c840a1!2sBhimavaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1638214859310!5m2!1sen!2sin" 
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 G Raj Samuel Paul. All Rights Reserved.</p>
+            <p><a href="#contact">Contact Me</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
